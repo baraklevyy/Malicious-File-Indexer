@@ -69,7 +69,7 @@ def request_extension(server_address, server_port, file_extension):
 def main(server_address, server_port):
     while True:
         file_extension = input('Please enter file extension: ')
-        if not file_extension or file_extension == "terminate":
+        if not file_extension:
             break
         request_extension(server_address, server_port, file_extension)
 
